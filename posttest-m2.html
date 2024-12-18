@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Data Nilai Mata Kuliah</title>
+</head>
+<body>
+    <h2>Form Tambah Data Nilai Mata Kuliah</h2>
+    <form action="/submit-nilai" method="POST">
+        <label for="namaMataKuliah">Nama Mata Kuliah:</label><br>
+        <input type="text" id="namaMataKuliah" name="namaMataKuliah" required><br><br>
+
+        <label for="namaDosen">Nama Dosen:</label><br>
+        <input type="text" id="namaDosen" name="namaDosen" required><br><br>
+
+        <label for="sks">SKS:</label><br>
+        <input type="number" id="sks" name="sks" min="1" required><br><br>
+
+        <label for="namaMahasiswa">Nama Mahasiswa:</label><br>
+        <input type="text" id="namaMahasiswa" name="namaMahasiswa" required><br><br>
+
+        <label for="jumlahKehadiran">Jumlah Kehadiran:</label><br>
+        <input type="number" id="jumlahKehadiran" name="jumlahKehadiran" min="0" required><br><br>
+
+        <label for="nilaiTugas">Nilai Tugas:</label><br>
+        <input type="number" id="nilaiTugas" name="nilaiTugas" min="0" max="100" required><br><br>
+
+        <label for="nilaiQuiz">Nilai Quiz:</label><br>
+        <input type="number" id="nilaiQuiz" name="nilaiQuiz" min="0" max="100" required><br><br>
+
+        <label for="nilaiUTS">Nilai UTS:</label><br>
+        <input type="number" id="nilaiUTS" name="nilaiUTS" min="0" max="100" required><br><br>
+
+        <label for="nilaiUAS">Nilai UAS:</label><br>
+        <input type="number" id="nilaiUAS" name="nilaiUAS" min="0" max="100" required><br><br>
+
+        <label for="nilaiAkhir">Nilai Akhir:</label><br>
+        <input type="number" id="nilaiAkhir" name="nilaiAkhir" min="0" max="100" required><br><br>
+
+        <label for="nilaiHuruf">Nilai Huruf:</label><br>
+        <input type="text" id="nilaiHuruf" name="nilaiHuruf" required><br><br>
+
+        <input type="submit" value="Tambah Data">
+    </form>
+</body>
+</html>
